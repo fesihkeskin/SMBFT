@@ -1,0 +1,117 @@
+SMBFT/
+# Root of the project
+├── models/
+│    
+│   └── final/
+│        
+│       └── smbft/
+│            
+│           ├── Houston13/
+│           │    
+│           │   ├── splits/
+│           │   │    
+│           │   │   ├── test_idx_seed_42.npy
+│           │   │   ├── train_idx_seed_42.npy
+│           │   │   └── val_idx_seed_42.npy
+│           │   ├── test_results/
+│           │   │    
+│           │   │   ├── confusion_matrix_seed_42.npy
+│           │   │   ├── confusion_matrix_seed_42.png
+│           │   │   ├── confusion_matrix_seed_42.txt
+│           │   │   ├── gt_vs_pred_side_by_side_seed_42.png
+│           │   │   ├── per_class_accuracy_seed_42.npy
+│           │   │   ├── per_class_accuracy_seed_42.png
+│           │   │   └── pred_map_seed_42.npy
+│           │   └── tsne_Houston13_seed42.png
+│           ├── Pavia_University/
+│           │    
+│           │   ├── splits/
+│           │   │    
+│           │   │   ├── test_idx_seed_42.npy
+│           │   │   ├── train_idx_seed_42.npy
+│           │   │   └── val_idx_seed_42.npy
+│           │   ├── test_results/
+│           │   │    
+│           │   │   ├── confusion_matrix_seed_42.npy
+│           │   │   ├── confusion_matrix_seed_42.png
+│           │   │   ├── confusion_matrix_seed_42.txt
+│           │   │   ├── gt_vs_pred_side_by_side_seed_42.png
+│           │   │   ├── per_class_accuracy_seed_42.npy
+│           │   │   ├── per_class_accuracy_seed_42.png
+│           │   │   └── pred_map_seed_42.npy
+│           │   └── tsne_Pavia_University_seed42.png
+│           └── Salinas/
+│                
+│               ├── splits/
+│               │    
+│               │   ├── test_idx_seed_42.npy
+│               │   ├── train_idx_seed_42.npy
+│               │   └── val_idx_seed_42.npy
+│               ├── test_results/
+│               │    
+│               │   ├── confusion_matrix_seed_42.npy
+│               │   ├── confusion_matrix_seed_42.png
+│               │   ├── confusion_matrix_seed_42.txt
+│               │   ├── gt_vs_pred_side_by_side_seed_42.png
+│               │   ├── per_class_accuracy_seed_42.npy
+│               │   ├── per_class_accuracy_seed_42.png
+│               │   └── pred_map_seed_42.npy
+│               └── tsne_Salinas_seed42.png
+├── notebooks/
+│    
+│   └── exploration/
+│        
+│       └── data_explorer.ipynb
+├── references/
+│    
+│   └── project_structure.txt
+├── scripts/
+│    
+├── src/
+│    
+│   ├── Dataset/
+│   │    
+│   │   ├── Houston13/
+│   │   │    
+│   │   ├── Pavia_University/
+│   │   │    
+│   │   └── Salinas/
+│   │        
+│   ├── data/
+│   │    
+│   │   ├── __init__.py
+│   │   ├── augmentations.py
+│   │   ├── class_distribution.py
+│   │   ├── data_loader.py
+│   │   ├── dataset.py
+│   │   ├── dataset_info.py
+│   │   └── downloader.py
+│   ├── models/
+│   │    
+│   │   ├── __init__.py
+│   │   └── model_architecture.py
+│   ├── training/
+│   │    
+│   │   ├── __init__.py
+│   │   ├── generate_optuna_reports.py
+│   │   ├── smbft_hyperparameter_tuning.py
+│   │   ├── test.py
+│   │   ├── train.py
+│   │   └── tsne_plot.py
+│   └── utils/
+│        
+│       ├── clean_optuna_db.py
+│       ├── resize_plotted_png.py
+│       ├── utils.py
+│       └── visualization.py
+├── Manuscript.tex
+├── README.md
+├── ablate.py
+├── compute_efficiency_metrics.py
+├── gather_ablation_results.py
+├── main.py
+├── multirun.py
+├── plot_gt_vs_pred_for_paper.py
+├── plot_train_history.py
+├── requirements.txt
+└── summarize_metrics.py

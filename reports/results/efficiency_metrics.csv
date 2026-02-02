@@ -1,0 +1,4 @@
+dataset,params_M,gmacs,macs_method,train_time_per_epoch_sec,inference_time_ms_per_patch,patch_size,in_bands
+Houston13,2.873503,0.151678368,fvcore,6.679411764705883,0.6008662926727212,9,64
+Pavia_University,0.976345,0.073835232,fvcore,6.473333333333334,0.34283212777553196,9,64
+Salinas,0.449414,0.045328728,fvcore,10.210714285714285,0.3961293015147865,13,30

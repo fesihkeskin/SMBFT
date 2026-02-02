@@ -1,0 +1,22 @@
+#!/bin/bash
+# Best parameters from overall_best_from_db_coarse for Pavia_University
+# --- Training Command ---
+python main.py --mode train --output_dir /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Pavia_University --batch_size 128 --d3_out_channels 16 --dataset Pavia_University --dim_feedforward 512 --dropout 0.004915142003102835 --early_stop 30 --epochs 10 --fusion query --lr 0.0023014491965656723 --mask_mode random --mask_ratio 0.24487402392504498 --n_heads 4 --n_layers 4 --no_band_dropout --no_mixup --no_spec_jitter --no_spec_mask --no_spec_shuffle --num_workers 4 --patch_size 9 --pca_components 64 --recon_weight 1.0 --seed 242 --spat_dim 32 --spec_dim 64 --stride 1 --train_ratio 0.05 --val_ratio 0.05 --weight_decay 3.448231348743791e-06
+
+# --- Testing Command ---
+python main.py --mode test --output_dir /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Pavia_University --batch_size 128 --d3_out_channels 16 --dataset Pavia_University --dim_feedforward 512 --dropout 0.004915142003102835 --fusion query --lr 0.0023014491965656723 --mask_mode random --mask_ratio 0.24487402392504498 --n_heads 4 --n_layers 4 --num_workers 4 --patch_size 9 --pca_components 64 --seed 242 --spat_dim 32 --spec_dim 64 --stride 1 --train_ratio 0.05 --val_ratio 0.05 --weight_decay 3.448231348743791e-06 --checkpoint /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Pavia_University/smbft_best_Pavia_University.pth --run_tsne --force
+
+# Best parameters from overall_best_from_db_fine for Houston13
+# --- Training Command ---
+python main.py --mode train --output_dir /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Houston13 --batch_size 16 --d3_out_channels 16 --dataset Houston13 --dim_feedforward 512 --dropout 0.008754262934426417 --early_stop 30 --epochs 10 --fusion query --lr 0.0009930721819500054 --mask_mode random --mask_ratio 0.22065971626008807 --n_heads 4 --n_layers 5 --no_band_dropout --no_mixup --no_spec_jitter --no_spec_mask --no_spec_shuffle --num_workers 4 --patch_size 9 --pca_components 64 --recon_weight 1.0 --seed 242 --spat_dim 128 --spec_dim 64 --stride 1 --train_ratio 0.05 --val_ratio 0.05 --weight_decay 1.057882708458453e-05
+
+# --- Testing Command ---
+python main.py --mode test --output_dir /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Houston13 --batch_size 16 --d3_out_channels 16 --dataset Houston13 --dim_feedforward 512 --dropout 0.008754262934426417 --fusion query --lr 0.0009930721819500054 --mask_mode random --mask_ratio 0.22065971626008807 --n_heads 4 --n_layers 5 --num_workers 4 --patch_size 9 --pca_components 64 --seed 242 --spat_dim 128 --spec_dim 64 --stride 1 --train_ratio 0.05 --val_ratio 0.05 --weight_decay 1.057882708458453e-05 --checkpoint /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Houston13/smbft_best_Houston13.pth --run_tsne --force
+
+
+# Best parameters from overall_best_from_db_fine for Salinas
+# --- Training Command ---
+python main.py --mode train --output_dir /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Salinas --batch_size 16 --d3_out_channels 8 --dataset Salinas --dim_feedforward 512 --dropout 0.3073733550267665 --early_stop 30 --epochs 10 --fusion query --lr 0.0001805433174407008 --mask_mode random --mask_ratio 0.13837922495315128 --n_heads 2 --n_layers 2 --no_cutmix --no_mixup --no_spec_mask --num_workers 4 --patch_size 13 --pca_components 30 --recon_weight 1.0 --seed 242 --spat_dim 48 --spec_dim 48 --stride 1 --train_ratio 0.05 --val_ratio 0.05 --weight_decay 7.237813686384994e-06
+
+# --- Testing Command ---
+python main.py --mode test --output_dir /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Salinas --batch_size 16 --d3_out_channels 8 --dataset Salinas --dim_feedforward 512 --dropout 0.3073733550267665 --fusion query --lr 0.0001805433174407008 --mask_mode random --mask_ratio 0.13837922495315128 --n_heads 2 --n_layers 2 --num_workers 4 --patch_size 13 --pca_components 30 --seed 242 --spat_dim 48 --spec_dim 48 --stride 1 --train_ratio 0.05 --val_ratio 0.05 --weight_decay 7.237813686384994e-06 --checkpoint /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Salinas/smbft_best_Salinas.pth --run_tsne --force 

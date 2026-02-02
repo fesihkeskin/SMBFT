@@ -1,0 +1,150 @@
+python main.py \
+--mode train \
+--dataset SalinasA \
+--output_dir ./models/checkpoints/ \
+--seed 101 \
+--train_ratio 0.1 \
+--val_ratio 0.05 \
+--patch_size 13 \
+--epochs 2 \
+--batch_size 64 \
+--lr 0.0003 \
+--weight_decay 0.0001 \
+--dropout 0.3 \
+--early_stop 2 \
+--spec_dim 128 \
+--spat_dim 128 \
+--n_heads 4 \
+--n_layers 6 \
+--fusion query \
+--mask_ratio 0.4 \
+--mask_mode block \
+--no_mixup \
+--no_cutmix \
+--run_tsne
+
+python main.py \
+--mode test \
+--dataset SalinasA \
+--checkpoint ./models/checkpoints/smbft_best_SalinasA.pth \
+--output_dir ./models/checkpoints/ \
+--patch_size 13 \
+--spec_dim 128 \
+--spat_dim 128 \
+--n_heads 4 \
+--n_layers 6 \
+--fusion query \
+--batch_size 128 \
+--run_tsne
+
+
+🔧 Hyperparameter settings:
+{
+    "batch_size": 16,
+    "cube_path": "/home/fesih/Desktop/ubuntu_projects/SMBFT/src/Dataset/SalinasA/SalinasA_corrected.mat",
+    "d3_out_channels": 32,
+    "dataset": "SalinasA",
+    "dim_feedforward": 1024,
+    "dropout": 0.1,
+    "early_stop": 20,
+    "epochs": 150,
+    "fusion": "graph",
+    "gt_path": "/home/fesih/Desktop/ubuntu_projects/SMBFT/src/Dataset/SalinasA/SalinasA_gt.mat",
+    "lr": 5.550527165678472e-05,
+    "mask_mode": "block",
+    "mask_ratio": 0.5,
+    "mode": "train",
+    "model_arch": "smbft",
+    "n_heads": 2,
+    "n_layers": 6,
+    "no_band_dropout": true,
+    "no_cutmix": true,
+    "no_mixup": true,
+    "no_spec_jitter": false,
+    "no_spec_mask": false,
+    "no_spec_shuffle": true,
+    "num_workers": 4,
+    "patch_size": 9,
+    "recon_weight": 1.0,
+    "seed": 242,
+    "spat_dim": 128,
+    "spec_dim": 128,
+    "stride": 4,
+    "train_ratio": 0.4,
+    "val_ratio": 0.1,
+    "weight_decay": 0.0002867228397593294
+}
+
+
+python main.py \
+  --mode train \
+  --dataset Houston13 \
+  --train_ratio 0.4 \
+  --val_ratio 0.1 \
+  --patch_size 15 \
+  --stride 2 \
+  --pca_components 0 \
+  --epochs 100 \
+  --early_stop 20 \
+  --batch_size 32 \
+  --lr 3.9119492110769184e-05 \
+  --weight_decay 0.0018674141117908524 \
+  --dropout 0.1 \
+  --recon_weight 1.0 \
+  --spec_dim 64 \
+  --spat_dim 128 \
+  --n_heads 4 \
+  --n_layers 2 \
+  --fusion graph \
+  --mask_ratio 0.1 \
+  --mask_mode random \
+  --dim_feedforward 256 \
+  --d3_out_channels 8 \
+  --no_band_dropout \
+  --no_spec_jitter \
+  --no_spec_shuffle \
+  --no_mixup \
+  --no_cutmix \
+  --no_spec_mask \
+  --num_workers 4 \
+  --output_dir /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Houston13 \
+  --seed 242 \
+  --run_tsne \
+  --max_samples 3000
+
+  python main.py \
+  --mode test \
+  --dataset Houston13 \
+  --train_ratio 0.4 \
+  --val_ratio 0.1 \
+  --patch_size 15 \
+  --stride 2 \
+  --pca_components 0 \
+  --epochs 100 \
+  --early_stop 20 \
+  --batch_size 32 \
+  --lr 3.9119492110769184e-05 \
+  --weight_decay 0.0018674141117908524 \
+  --dropout 0.1 \
+  --recon_weight 1.0 \
+  --spec_dim 64 \
+  --spat_dim 128 \
+  --n_heads 4 \
+  --n_layers 2 \
+  --fusion graph \
+  --mask_ratio 0.1 \
+  --mask_mode random \
+  --dim_feedforward 256 \
+  --d3_out_channels 8 \
+  --no_band_dropout \
+  --no_spec_jitter \
+  --no_spec_shuffle \
+  --no_mixup \
+  --no_cutmix \
+  --no_spec_mask \
+  --num_workers 4 \
+  --output_dir /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Houston13 \
+  --seed 242 \
+  --run_tsne \
+  --max_samples 3000 \
+  --checkpoint /home/fesih/Desktop/ubuntu_projects/SMBFT/models/final/smbft/Houston13/smbft_best_Houston13.pth

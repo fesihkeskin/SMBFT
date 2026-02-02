@@ -1,0 +1,2 @@
+path,dataset,seed,best_val_OA,test_OA,train_time_minutes,num_parameters,fusion,pca_components,no_spec_mask,no_cross_attn,lr,batch_size,patch_size,epochs
+models/final/smbft/Salinas/train_history_Salinas_seed42.json,Salinas,42,1.0,0.9991381963681133,18.57,449414,query,30,True,False,0.0001805433174407008,16,13,300

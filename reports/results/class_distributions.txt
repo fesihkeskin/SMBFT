@@ -1,0 +1,60 @@
+🛢️ Dataset: Houston13
+✂️ Train ratio: 0.05  Val ratio: 0.05  Min samples: 5
+⚖️ Imbalance ratio: 3.94   Loss: CrossEntropy
+
+|   Class | Name            |   Train |   Val |   Test |
+|---------|-----------------|---------|-------|--------|
+|       0 | Healthy grass   |      62 |    62 |   1127 |
+|       1 | Stressed grass  |      62 |    62 |   1130 |
+|       2 | Synthetic grass |      34 |    34 |    629 |
+|       3 | Trees           |      62 |    62 |   1120 |
+|       4 | Soil            |      62 |    62 |   1118 |
+|       5 | Water           |      16 |    16 |    293 |
+|       6 | Residential     |      63 |    63 |   1142 |
+|       7 | Commercial      |      62 |    62 |   1120 |
+|       8 | Road            |      62 |    62 |   1128 |
+|       9 | Highway         |      61 |    61 |   1105 |
+|      10 | Railway         |      61 |    61 |   1113 |
+|      11 | Parking Lot 1   |      61 |    61 |   1111 |
+|      12 | Parking Lot 2   |      23 |    23 |    423 |
+|      13 | Tennis Court    |      21 |    21 |    386 |
+|      14 | Running Track   |      33 |    33 |    594 |
+
+🛢️ Dataset: Pavia_University
+✂️ Train ratio: 0.05  Val ratio: 0.05  Min samples: 5
+⚖️ Imbalance ratio: 19.83   Loss: FocalLoss
+
+|   Class | Name                 |   Train |   Val |   Test |
+|---------|----------------------|---------|-------|--------|
+|       0 | Asphalt              |     331 |   331 |   5969 |
+|       1 | Meadows              |     932 |   932 |  16785 |
+|       2 | Gravel               |     104 |   104 |   1891 |
+|       3 | Trees                |     153 |   153 |   2758 |
+|       4 | Painted metal sheets |      67 |    67 |   1211 |
+|       5 | Bare Soil            |     251 |   251 |   4527 |
+|       6 | Bitumen              |      66 |    66 |   1198 |
+|       7 | Self-Blocking Bricks |     184 |   184 |   3314 |
+|       8 | Shadows              |      47 |    47 |    853 |
+
+🛢️ Dataset: Salinas
+✂️ Train ratio: 0.05  Val ratio: 0.05  Min samples: 5
+⚖️ Imbalance ratio: 12.51   Loss: FocalLoss
+
+|   Class | Name                      |   Train |   Val |   Test |
+|---------|---------------------------|---------|-------|--------|
+|       0 | Broccoli_green_weeds_1    |     100 |   100 |   1809 |
+|       1 | Broccoli_green_weeds_2    |     186 |   186 |   3354 |
+|       2 | Fallow                    |      98 |    98 |   1780 |
+|       3 | Fallow_rough_plow         |      69 |    69 |   1256 |
+|       4 | Fallow_smooth             |     133 |   133 |   2412 |
+|       5 | Stubble                   |     197 |   197 |   3565 |
+|       6 | Celery                    |     178 |   178 |   3223 |
+|       7 | Grapes_untrained          |     563 |   563 |  10145 |
+|       8 | Soil_vineyard_develop     |     310 |   310 |   5583 |
+|       9 | Corn_senesced_green_weeds |     163 |   163 |   2952 |
+|      10 | Lettuce_romaine_4wk       |      53 |    53 |    962 |
+|      11 | Lettuce_romaine_5wk       |      96 |    96 |   1735 |
+|      12 | Lettuce_romaine_6wk       |      45 |    45 |    826 |
+|      13 | Lettuce_romaine_7wk       |      53 |    53 |    964 |
+|      14 | Vineyard_untrained        |     363 |   363 |   6542 |
+|      15 | Vineyard_vertical_trellis |      90 |    90 |   1627 |

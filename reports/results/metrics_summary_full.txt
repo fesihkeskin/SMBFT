@@ -1,0 +1,63 @@
+Dataset                          OA (%)             AA (%)          Kappa (%)
+---------------------------------------------------------------------------
+Houston13              98.55 ± 0.33        98.58 ± 0.48        98.43 ± 0.35
+Pavia_University       99.66 ± 0.09        99.42 ± 0.16        99.55 ± 0.12
+Salinas                99.92 ± 0.04        99.89 ± 0.07        99.91 ± 0.04
+
+---------------------------------------------------------------------------
+Dataset                Train Time (min)     Infer Time (s)         Params (M)
+---------------------------------------------------------------------------
+Houston13               7.31 ± 0.98         8.12 ± 0.10         2.87M
+Pavia_University        9.43 ± 1.05        13.14 ± 0.01         0.98M
+Salinas                11.02 ± 1.94        19.02 ± 0.23         0.45M
+
+
+===========================================================================
+Per-Class Average Accuracies (%)
+===========================================================================
+
+--- Houston13 ---
+  Healthy grass       98.31 ± 1.29
+  Stressed grass      99.38 ± 0.62
+  Synthetic grass     99.83 ± 0.23
+  Trees               98.66 ± 2.10
+  Soil                99.99 ± 0.03
+  Water               98.09 ± 4.63
+  Residential         97.82 ± 1.40
+  Commercial          96.59 ± 2.21
+  Road                96.16 ± 2.05
+  Highway             99.67 ± 0.74
+  Railway             99.79 ± 0.48
+  Parking Lot 1       98.24 ± 1.33
+  Parking Lot 2       96.41 ± 3.12
+  Tennis Court       100.00 ± 0.00
+  Running Track       99.76 ± 0.59
+
+--- Pavia_University ---
+  Asphalt                  99.71 ± 0.18
+  Meadows                  99.93 ± 0.07
+  Gravel                   98.32 ± 0.75
+  Trees                    98.86 ± 0.50
+  Painted metal sheets     99.93 ± 0.10
+  Bare Soil               100.00 ± 0.00
+  Bitumen                  99.57 ± 0.63
+  Self-Blocking Bricks     99.25 ± 0.48
+  Shadows                  99.17 ± 0.79
+
+--- Salinas ---
+  Broccoli_green_weeds_1       100.00 ± 0.00
+  Broccoli_green_weeds_2       100.00 ± 0.00
+  Fallow                       100.00 ± 0.00
+  Fallow_rough_plow             99.78 ± 0.24
+  Fallow_smooth                 99.66 ± 0.40
+  Stubble                       99.99 ± 0.03
+  Celery                        99.96 ± 0.06
+  Grapes_untrained              99.94 ± 0.06
+  Soil_vineyard_develop        100.00 ± 0.00
+  Corn_senesced_green_weeds     99.99 ± 0.02
+  Lettuce_romaine_4wk          100.00 ± 0.00
+  Lettuce_romaine_5wk           99.95 ± 0.06
+  Lettuce_romaine_6wk           99.94 ± 0.10
+  Lettuce_romaine_7wk           99.50 ± 1.08
+  Vineyard_untrained            99.85 ± 0.17
+  Vineyard_vertical_trellis     99.75 ± 0.22

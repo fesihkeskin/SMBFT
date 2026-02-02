@@ -1,0 +1,40 @@
+# requirements.txt
+# This file lists the Python package dependencies for the project.
+
+# Core scientific stack
+numpy
+scipy
+pandas
+
+# Deep learning
+torch
+torchvision
+
+# Machine learning utilities
+scikit-learn
+
+# Hyperparameter optimization
+optuna
+
+# Visualization
+matplotlib
+seaborn
+tqdm
+
+# For saving/loading Optuna studies
+joblib
+
+# For table formatting in reports (optional, used in class_distribution.py)
+tabulate
+
+# For saving Optuna plots as images (plotly + kaleido)
+plotly
+kaleido
+
+# Jupyter notebook support (for notebooks/)
+notebook
+
+# For computational complexity analysis (optional, for efficiency metrics)
+fvcore
+thop
+ptflops

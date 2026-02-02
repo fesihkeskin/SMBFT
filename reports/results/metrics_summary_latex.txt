@@ -1,0 +1,79 @@
+% --- Main Performance Table --- 
+\begin{table}[h]
+\centering
+\caption{Performance and Efficiency Metrics}
+\label{tab:results}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccc}
+\toprule
+Dataset & OA (\%) & AA (\%) & Kappa (\%) & Train Time (min) & Params (M) \\
+\midrule
+Houston13 & 98.55 $\pm$ 0.33 & 98.58 $\pm$ 0.48 & 98.43 $\pm$ 0.35 & 7.31 $\pm$ 0.98 & 2.87 \\
+Pavia University & 99.66 $\pm$ 0.09 & 99.42 $\pm$ 0.16 & 99.55 $\pm$ 0.12 & 9.43 $\pm$ 1.05 & 0.98 \\
+Salinas & 99.92 $\pm$ 0.04 & 99.89 $\pm$ 0.07 & 99.91 $\pm$ 0.04 & 11.02 $\pm$ 1.94 & 0.45 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+% --- Per-Class Accuracy Tables --- 
+
+% Per-class results for Houston13
+\begin{table}[h]
+\centering
+\caption{Per-Class Accuracy (\%) for Houston13}
+\label{tab:pca_houston13}
+\begin{tabular}{lc@{\hspace{4em}}lc}
+\toprule
+Class & Accuracy (\%) & Class & Accuracy (\%) \\
+\midrule
+Healthy grass & 98.31 $\pm$ 1.29 & Road & 96.16 $\pm$ 2.05 \\
+Stressed grass & 99.38 $\pm$ 0.62 & Highway & 99.67 $\pm$ 0.74 \\
+Synthetic grass & 99.83 $\pm$ 0.23 & Railway & 99.79 $\pm$ 0.48 \\
+Trees & 98.66 $\pm$ 2.10 & Parking Lot 1 & 98.24 $\pm$ 1.33 \\
+Soil & 99.99 $\pm$ 0.03 & Parking Lot 2 & 96.41 $\pm$ 3.12 \\
+Water & 98.09 $\pm$ 4.63 & Tennis Court & 100.00 $\pm$ 0.00 \\
+Residential & 97.82 $\pm$ 1.40 & Running Track & 99.76 $\pm$ 0.59 \\
+Commercial & 96.59 $\pm$ 2.21 & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Per-class results for Pavia University
+\begin{table}[h]
+\centering
+\caption{Per-Class Accuracy (\%) for Pavia University}
+\label{tab:pca_pavia_university}
+\begin{tabular}{lc@{\hspace{4em}}lc}
+\toprule
+Class & Accuracy (\%) & Class & Accuracy (\%) \\
+\midrule
+Asphalt & 99.71 $\pm$ 0.18 & Bare Soil & 100.00 $\pm$ 0.00 \\
+Meadows & 99.93 $\pm$ 0.07 & Bitumen & 99.57 $\pm$ 0.63 \\
+Gravel & 98.32 $\pm$ 0.75 & Self-Blocking Bricks & 99.25 $\pm$ 0.48 \\
+Trees & 98.86 $\pm$ 0.50 & Shadows & 99.17 $\pm$ 0.79 \\
+Painted metal sheets & 99.93 $\pm$ 0.10 & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Per-class results for Salinas
+\begin{table}[h]
+\centering
+\caption{Per-Class Accuracy (\%) for Salinas}
+\label{tab:pca_salinas}
+\begin{tabular}{lc@{\hspace{4em}}lc}
+\toprule
+Class & Accuracy (\%) & Class & Accuracy (\%) \\
+\midrule
+Broccoli green weeds 1 & 100.00 $\pm$ 0.00 & Soil vineyard develop & 100.00 $\pm$ 0.00 \\
+Broccoli green weeds 2 & 100.00 $\pm$ 0.00 & Corn senesced green weeds & 99.99 $\pm$ 0.02 \\
+Fallow & 100.00 $\pm$ 0.00 & Lettuce romaine 4wk & 100.00 $\pm$ 0.00 \\
+Fallow rough plow & 99.78 $\pm$ 0.24 & Lettuce romaine 5wk & 99.95 $\pm$ 0.06 \\
+Fallow smooth & 99.66 $\pm$ 0.40 & Lettuce romaine 6wk & 99.94 $\pm$ 0.10 \\
+Stubble & 99.99 $\pm$ 0.03 & Lettuce romaine 7wk & 99.50 $\pm$ 1.08 \\
+Celery & 99.96 $\pm$ 0.06 & Vineyard untrained & 99.85 $\pm$ 0.17 \\
+Grapes untrained & 99.94 $\pm$ 0.06 & Vineyard vertical trellis & 99.75 $\pm$ 0.22 \\
+\bottomrule
+\end{tabular}
+\end{table}
