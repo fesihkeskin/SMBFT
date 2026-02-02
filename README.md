@@ -32,7 +32,6 @@ SMBFT/
 ├── gather_ablation_results.py # Aggregate ablation metrics and export LaTeX
 ├── main.py                    # Main CLI (train/test + optional t-SNE)
 ├── multirun.py                # Multi-seed execution helper
-├── run_all_tsne.py            # Batch t-SNE visualization helper
 ├── summarize_metrics.py       # Aggregate metrics across seeds
 └── README.md
 ```
@@ -157,12 +156,32 @@ reports/results/
 
 ---
 
-## License
-
-See [LICENSE](LICENSE).
-
 ---
 
 ## Citation
 
-If you use this code, please cite the accompanying manuscript.
+If you find this work useful in your research, please consider citing:
+
+```BibTeX
+@Article{Keskin2026f,
+  author   = {Fesih Keskin},
+  journal  = {},
+  title    = {},
+  year     = {2026},
+  issn     = {},
+  pages    = {},
+  doi      = {},
+  keywords = {},
+  url      = {},
+}
+```
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+## Acknowledgements
+
+The authors gratefully acknowledge the providers of the Houston 2013, Pavia University, and Salinas hyperspectral datasets for making these benchmarks publicly available.
