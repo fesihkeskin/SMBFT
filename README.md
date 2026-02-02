@@ -26,7 +26,7 @@ SMBFT/
 │   ├── Dataset/               # Dataset folders (Houston13, Pavia_University, Salinas)
 │   ├── data/                  # Data loading, preprocessing, augmentations
 │   ├── models/                # SMBFT architecture and related models
-│   ├── training/              # Train/test/t-SNE/Optuna utilities
+│   ├── training/              # Train/test/Optuna utilities
 │   └── utils/                 # Visualization and helper utilities
 ├── ablate.py                  # Ablation study runner
 ├── gather_ablation_results.py # Aggregate ablation metrics and export LaTeX
