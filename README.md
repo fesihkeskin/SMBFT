@@ -1,6 +1,6 @@
 # SMBFT: Spectral-Masked Bidirectional Fusion Transformer
 
-This repository contains the official implementation of **SMBFT** (Spectral‑Masked Bidirectional Fusion Transformer) for hyperspectral image (HSI) classification, aligned with the paper **“Spectral‑Masked Bidirectional Fusion Transformer (SMBFT) for Hyperspectral Image Classification.”**
+This repository contains the official implementation of **“Spectral‑Masked Bidirectional Fusion Transformer (SMBFT) for Hyperspectral Image Classification.”**
 
 SMBFT is a dual‑stream architecture that learns **spectral** and **spatial** representations separately and fuses them through **bidirectional cross‑attention** with gated conditioning. An **optional spectral‑masking auxiliary objective** is supported during training. The pipeline emphasizes **reproducibility** with stratified pixel splits, train‑only normalization, optional PCA fit on the training split, and saved split indices.
 
